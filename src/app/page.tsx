@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import Rating from "@/components/Rating";
+import Gallery from "@/components/Gallery";
+import Testimonies from "@/components/Testimonies";
 
 export default function Home() {
   return (
@@ -108,30 +110,36 @@ export default function Home() {
         <div className="flex flex-col items-center px-5">
           <div className="collapse collapse-arrow bg-white max-w-screen-lg text-center">
             <input type="radio" name="my-accordion-2" defaultChecked />
-            <div className="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div className="collapse-title text-xl font-medium">Bagaimana cara saya order?</div>
             <div className="collapse-content">
-              <p>hello</p>
+              <p className="text-primary">Caranya pake tombol <span className="font-semibold">Order</span></p>
             </div>
           </div>
         </div>
         <div className="flex flex-col items-center px-5 py-5">
           <div className="collapse collapse-arrow bg-white max-w-screen-lg text-center">
             <input type="radio" name="my-accordion-2" defaultChecked />
-            <div className="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div className="collapse-title text-xl font-medium">Apakah sudah termasuk ongkir?</div>
             <div className="collapse-content">
-              <p>hello</p>
+              <p className="text-primary">Ya, sudah!. Pengiriman gratis seluruh Indonesia</p>
             </div>
           </div>
         </div>
         <div className="flex flex-col items-center px-5">
           <div className="collapse collapse-arrow bg-white max-w-screen-lg text-center">
             <input type="radio" name="my-accordion-2" defaultChecked />
-            <div className="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div className="collapse-title text-xl font-medium">Apakah bisa custom kue?</div>
             <div className="collapse-content">
-              <p>hello</p>
+              <p className="text-primary">Sangat Bisa!</p>
             </div>
           </div>
         </div>
+      </section>
+      <section className="py-10 px-5">
+        <Gallery />
+      </section>
+      <section className="bg-primary py-10">
+        <Testimonies />
       </section>
     </>
   );
